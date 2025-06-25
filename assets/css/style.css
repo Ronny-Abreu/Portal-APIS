@@ -116,3 +116,110 @@
 * {
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+
+/* Botones específicos para cada API */
+.btn-weather {
+    @apply bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 text-white px-6 py-3 rounded-lg font-medium hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+.btn-age {
+    @apply bg-gradient-to-r from-orange-400 via-yellow-400 to-red-400 text-white px-6 py-3 rounded-lg font-medium hover:from-orange-500 hover:via-yellow-500 hover:to-red-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+.btn-university {
+    @apply bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-white px-6 py-3 rounded-lg font-medium hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+}
+
+/* Animaciones escalonadas */
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Efectos de clima */
+.weather-sunny {
+    background: linear-gradient(135deg, #FEF3C7 0%, #FCD34D 100%);
+}
+
+.weather-rainy {
+    background: linear-gradient(135deg, #DBEAFE 0%, #3B82F6 100%);
+}
+
+.weather-cloudy {
+    background: linear-gradient(135deg, #F3F4F6 0%, #6B7280 100%);
+}
+
+.weather-cold {
+    background: linear-gradient(135deg, #EFF6FF 0%, #2563EB 100%);
+}
+
+/* Barras de progreso animadas */
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+.university-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 640px) {
+    .grid-responsive {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .grid-responsive {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .grid-responsive {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.loading-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+}
+
+.focus-ring:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #3B82F6;
+}
+
+button, a, input, select, textarea {
+    transition: all 0.3s ease;
+}
+
+/* Estilos para notificaciones */
+.notification {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.notification.show {
+    transform: translateX(0);
+    opacity: 1;
+}
