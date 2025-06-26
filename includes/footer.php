@@ -126,7 +126,7 @@ $pagesPath = $isInPagesFolder ? '' : 'pages/';
                     <div class="text-gray-300 text-sm">APIs Integradas</div>
                 </div>
                 <div class="bg-gray-800 rounded-lg p-4">
-                    <div class="text-2xl font-bold text-green-400">HTML/TAILWIND</div>
+                    <div class="text-2xl font-bold text-green-400">HTML <br> TAILWIND</div>
                     <div class="text-gray-300 text-sm">Frontend</div>
                 </div>
                 <div class="bg-gray-800 rounded-lg p-4">
