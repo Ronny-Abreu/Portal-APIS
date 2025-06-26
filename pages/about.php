@@ -210,7 +210,11 @@ include_once '../includes/functions.php';
                 </h2>
                 
                 <div class="grid gap-6">
-                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <!-- Genderize.io -->
+                    <div 
+                        class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                        onclick="window.location.href='gender.php';"
+                    >
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-gray-800 flex items-center">
                                 <span class="text-2xl mr-3">👦👧</span>
@@ -219,10 +223,19 @@ include_once '../includes/functions.php';
                             <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Gratuita</span>
                         </div>
                         <p class="text-sm text-gray-600 mb-2">Predice el género de una persona basándose en su nombre</p>
-                        <code class="text-xs bg-gray-100 px-2 py-1 rounded">https://api.genderize.io/</code>
+                        <a 
+                            href="https://api.genderize.io" 
+                            target="_blank" 
+                            class="text-xs bg-gray-100 px-2 py-1 rounded underline text-blue-700 hover:text-blue-900"
+                            onclick="event.stopPropagation();"
+                        >https://api.genderize.io/</a>
                     </div>
 
-                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <!-- Agify.io -->
+                    <div 
+                        class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                        onclick="window.location.href='age.php';"
+                    >
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-gray-800 flex items-center">
                                 <span class="text-2xl mr-3">🎂</span>
@@ -231,10 +244,19 @@ include_once '../includes/functions.php';
                             <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Gratuita</span>
                         </div>
                         <p class="text-sm text-gray-600 mb-2">Estima la edad de una persona basándose en su nombre</p>
-                        <code class="text-xs bg-gray-100 px-2 py-1 rounded">https://api.agify.io/</code>
+                        <a 
+                            href="https://api.agify.io/" 
+                            target="_blank" 
+                            class="text-xs bg-gray-100 px-2 py-1 rounded underline text-blue-700 hover:text-blue-900"
+                            onclick="event.stopPropagation();"
+                        >https://api.agify.io/</a>
                     </div>
 
-                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <!-- Hipolabs -->
+                    <div 
+                        class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                        onclick="window.location.href='universities.php';"
+                    >
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-gray-800 flex items-center">
                                 <span class="text-2xl mr-3">🎓</span>
@@ -243,10 +265,19 @@ include_once '../includes/functions.php';
                             <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Gratuita</span>
                         </div>
                         <p class="text-sm text-gray-600 mb-2">Base de datos de universidades organizadas por país</p>
-                        <code class="text-xs bg-gray-100 px-2 py-1 rounded">http://universities.hipolabs.com/</code>
+                        <a 
+                            href="http://universities.hipolabs.com/" 
+                            target="_blank" 
+                            class="text-xs bg-gray-100 px-2 py-1 rounded underline text-blue-700 hover:text-blue-900"
+                            onclick="event.stopPropagation();"
+                        >http://universities.hipolabs.com/</a>
                     </div>
 
-                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <!-- Wttr.in -->
+                    <div 
+                        class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                        onclick="window.location.href='weather.php';"
+                    >
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-gray-800 flex items-center">
                                 <span class="text-2xl mr-3">🌦️</span>
@@ -255,10 +286,19 @@ include_once '../includes/functions.php';
                             <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Gratuita</span>
                         </div>
                         <p class="text-sm text-gray-600 mb-2">Servicio de clima en tiempo real sin necesidad de API key</p>
-                        <code class="text-xs bg-gray-100 px-2 py-1 rounded">https://wttr.in/</code>
+                        <a 
+                            href="https://wttr.in/" 
+                            target="_blank" 
+                            class="text-xs bg-gray-100 px-2 py-1 rounded underline text-blue-700 hover:text-blue-900"
+                            onclick="event.stopPropagation();"
+                        >https://wttr.in/</a>
                     </div>
 
-                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                    <!-- PokéAPI -->
+                    <div 
+                        class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                        onclick="window.location.href='pokemon.php';"
+                    >
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-gray-800 flex items-center">
                                 <span class="text-2xl mr-3">⚡</span>
@@ -267,7 +307,12 @@ include_once '../includes/functions.php';
                             <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Gratuita</span>
                         </div>
                         <p class="text-sm text-gray-600 mb-2">API completa con información detallada de todos los Pokémon</p>
-                        <code class="text-xs bg-gray-100 px-2 py-1 rounded">https://pokeapi.co/</code>
+                        <a 
+                            href="https://pokeapi.co/" 
+                            target="_blank" 
+                            class="text-xs bg-gray-100 px-2 py-1 rounded underline text-blue-700 hover:text-blue-900"
+                            onclick="event.stopPropagation();"
+                        >https://pokeapi.co/</a>
                     </div>
                 </div>
             </div>
