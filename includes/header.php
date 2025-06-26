@@ -1,3 +1,11 @@
+<?php
+// Detectar si estamos en la carpeta pages o en la raíz
+$isInPagesFolder = strpos($_SERVER['REQUEST_URI'], '/pages/') !== false;
+$basePath = $isInPagesFolder ? '../' : '';
+$pagesPath = $isInPagesFolder ? '' : 'pages/';
+$homeUrl = $isInPagesFolder ? '../index.php' : 'index.php';
+?>
+
 <header class="bg-white shadow-lg sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
@@ -15,7 +23,7 @@
             
             <!-- Desktop menu -->
             <div class="hidden md:flex space-x-6">
-                <a href="/portal-apis/" class="nav-link">
+                <a href="<?php echo $homeUrl; ?>" class="nav-link">
                     <i class="fas fa-home mr-1"></i>Inicio
                 </a>
                 <div class="relative group">
@@ -24,24 +32,24 @@
                         <i class="fas fa-chevron-down ml-1 text-xs"></i>
                     </button>
                     <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-                        <a href="pages/gender.php" class="dropdown-link">
+                        <a href="<?php echo $pagesPath; ?>gender.php" class="dropdown-link">
                             <i class="fas fa-venus-mars mr-2"></i>Género
                         </a>
-                        <a href="pages/age.php" class="dropdown-link">
+                        <a href="<?php echo $pagesPath; ?>age.php" class="dropdown-link">
                             <i class="fas fa-birthday-cake mr-2"></i>Edad
                         </a>
-                        <a href="pages/universities.php" class="dropdown-link">
+                        <a href="<?php echo $pagesPath; ?>universities.php" class="dropdown-link">
                             <i class="fas fa-university mr-2"></i>Universidades
                         </a>
-                        <a href="pages/weather.php" class="dropdown-link">
+                        <a href="<?php echo $pagesPath; ?>weather.php" class="dropdown-link">
                             <i class="fas fa-cloud-sun mr-2"></i>Clima
                         </a>
-                        <a href="pages/pokemon.php" class="dropdown-link">
+                        <a href="<?php echo $pagesPath; ?>pokemon.php" class="dropdown-link">
                             <i class="fas fa-gamepad mr-2"></i>Pokémon
                         </a>
                     </div>
                 </div>
-                <a href="pages/about.php" class="nav-link">
+                <a href="<?php echo $pagesPath; ?>about.php" class="nav-link">
                     <i class="fas fa-info-circle mr-1"></i>Acerca de
                 </a>
             </div>
@@ -50,28 +58,28 @@
         <!-- Mobile menu -->
         <div id="mobileMenu" class="md:hidden mt-4 hidden">
             <div class="flex flex-col space-y-2">
-                <a href="/portal-apis/" class="mobile-nav-link">
+                <a href="<?php echo $homeUrl; ?>" class="mobile-nav-link">
                     <i class="fas fa-home mr-2"></i>Inicio
                 </a>
-                <a href="pages/gender.php" class="mobile-nav-link">
+                <a href="<?php echo $pagesPath; ?>gender.php" class="mobile-nav-link">
                     <i class="fas fa-venus-mars mr-2"></i>Género
                 </a>
-                <a href="pages/age.php" class="mobile-nav-link">
+                <a href="<?php echo $pagesPath; ?>age.php" class="mobile-nav-link">
                     <i class="fas fa-birthday-cake mr-2"></i>Edad
                 </a>
-                <a href="pages/universities.php" class="mobile-nav-link">
+                <a href="<?php echo $pagesPath; ?>universities.php" class="mobile-nav-link">
                     <i class="fas fa-university mr-2"></i>Universidades
                 </a>
-                <a href="pages/weather.php" class="mobile-nav-link">
+                <a href="<?php echo $pagesPath; ?>weather.php" class="mobile-nav-link">
                     <i class="fas fa-cloud-sun mr-2"></i>Clima
                 </a>
-                <a href="pages/pokemon.php" class="mobile-nav-link">
+                <a href="<?php echo $pagesPath; ?>pokemon.php" class="mobile-nav-link">
                     <i class="fas fa-gamepad mr-2"></i>Pokémon
                 </a>
-                <a href="pages/about.php" class="mobile-nav-link">
+                <a href="<?php echo $pagesPath; ?>about.php" class="mobile-nav-link">
                     <i class="fas fa-info-circle mr-2"></i>Acerca de
                 </a>
             </div>
         </div>
     </nav>
-</header>   
+</header>
