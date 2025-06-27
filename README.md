@@ -1,4 +1,4 @@
-# Portal APIs - Ronny Ariel De León Abreu
+![image](https://github.com/user-attachments/assets/b9b2c3c4-0f86-41e8-aae5-7f091d682957)# Portal APIs - Ronny Ariel De León Abreu
 
 Un portal web dinámico desarrollado en PHP que integra 10 APIs diferentes para demostrar el consumo de servicios web externos y la creación de interfaces interactivas.
 
@@ -33,6 +33,20 @@ Este proyecto es un portal web que consume múltiples APIs externas para proporc
 8. **Generador de Imágenes** - Búsqueda de imágenes por palabra clave
 9. **Datos de Países** - Información detallada de países del mundo
 10. **Generador de Chistes** - Chistes aleatorios en inglés
+
+## IMAGENES SOBRE EL PROYECTO
+
+- **INICIO**
+![image](https://github.com/user-attachments/assets/ccef48d5-1731-4b41-a6f5-4796fb78fa75)
+
+- **Acerca de**
+![image](https://github.com/user-attachments/assets/e9bbc90e-98ff-49cb-bb02-161abd5fcdfd)
+![image](https://github.com/user-attachments/assets/fc2ae852-c511-49b2-a4ab-87f449430476)
+
+- **Footer**
+![image](https://github.com/user-attachments/assets/5a68889d-3648-4c34-a006-f41c767090c2)
+
+
 
 ## 🛠️ Requisitos del Sistema
 
