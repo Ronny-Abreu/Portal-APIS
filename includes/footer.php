@@ -77,8 +77,17 @@ $pagesPath = $isInPagesFolder ? '' : 'pages/';
                             Información Pokémon
                         </a>
                     </li>
+
+                    <li>
+                        <a href="<?php echo $pagesPath; ?>news.php" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center">
+                            <i class="fas fa-newspaper mr-2 text-red-400"></i>
+                            Noticias WordPress
+                        </a>
+                    </li>
                 </ul>
             </div>
+
+            
 
             <!-- Tecnologías -->
             <div>
