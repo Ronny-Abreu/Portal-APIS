@@ -84,6 +84,13 @@ $pagesPath = $isInPagesFolder ? '' : 'pages/';
                             Noticias WordPress
                         </a>
                     </li>
+
+                    <li>
+                        <a href="<?php echo $pagesPath; ?>currency.php" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center">
+                            <i class="fas fa-exchange-alt mr-2 text-green-400"></i>
+                            Conversión de Monedas
+                        </a>
+                    </li>
                 </ul>
             </div>
 
