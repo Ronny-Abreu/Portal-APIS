@@ -91,6 +91,13 @@ $pagesPath = $isInPagesFolder ? '' : 'pages/';
                             Conversión de Monedas
                         </a>
                     </li>
+
+                     <li>
+                        <a href="<?php echo $pagesPath; ?>images.php" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center">
+                            <i class="fas fa-image mr-2 text-purple-400"></i>
+                            Generador de Imágenes
+                        </a>
+                    </li>
                 </ul>
             </div>
 
