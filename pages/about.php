@@ -329,11 +329,33 @@ include_once '../includes/functions.php';
                         </div>
                         <p class="text-sm text-gray-600 mb-2">Obtiene las últimas noticias de sitios web construidos con WordPress</p>
                         <a 
-                            href="wp-json/wp/v2/posts/" 
+                            href="https://wordpress.org/news/wp-json/wp/v2/posts" 
                             target="_blank" 
                             class="text-xs bg-gray-100 px-2 py-1 rounded underline text-blue-700 hover:text-blue-900"
                             onclick="event.stopPropagation();"
-                        >https://pokeapi.co/</a>
+                        >https://wordpress.org/news/wp-json/wp/v2/posts</a>
+                    </div>
+
+
+                    <!-- Monedas API -->
+                    <div 
+                        class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-300 cursor-pointer"
+                        onclick="window.location.href='currency.php';"
+                    >
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-semibold text-gray-800 flex items-center">
+                                <span class="text-2xl mr-3">📰</span>
+                                    WordPress REST API - Noticias
+                            </h3>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Gratuita</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">Convierte dólares estadounidenses a múltiples monedas mundiales</p>
+                        <a 
+                            href="https://api.exchangerate-api.com/" 
+                            target="_blank" 
+                            class="text-xs bg-gray-100 px-2 py-1 rounded underline text-blue-700 hover:text-blue-900"
+                            onclick="event.stopPropagation();"
+                        >https://api.exchangerate-api.com/</a>
                     </div>
 
                 </div>

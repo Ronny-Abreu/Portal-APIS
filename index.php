@@ -112,6 +112,18 @@ include_once 'includes/functions.php';
                 </div>
             </div>
 
+            <!-- Currency API Card -->
+            <div class="api-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="p-6">
+                    <div class="text-4xl mb-4 text-center">💰</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Conversión de Monedas</h3>
+                    <p class="text-gray-600 mb-4">Convierte USD a otras monedas</p>
+                    <a href="pages/currency.php" class="btn-primary w-full text-center block">
+                        <i class="fas fa-exchange-alt mr-2"></i>Explorar
+                    </a>
+                </div>
+            </div>
+
         </div>
     </main>
 
