@@ -98,6 +98,13 @@ $pagesPath = $isInPagesFolder ? '' : 'pages/';
                             Generador de Imágenes
                         </a>
                     </li>
+
+                    <li>
+                        <a href="<?php echo $pagesPath; ?>countries.php" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center">
+                            <i class="fas fa-globe mr-2 text-blue-400"></i>
+                            Datos de Países
+                        </a>
+                    </li>
                 </ul>
             </div>
 
