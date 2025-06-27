@@ -105,6 +105,13 @@ $pagesPath = $isInPagesFolder ? '' : 'pages/';
                             Datos de Países
                         </a>
                     </li>
+
+                    <li>
+                        <a href="<?php echo $pagesPath; ?>jokes.php" class="text-gray-300 hover:text-white transition-colors duration-300 flex items-center">
+                            <i class="fas fa-laugh mr-2 text-yellow-400"></i>
+                            Generador de Chistes
+                        </a>
+                    </li>
                 </ul>
             </div>
 
