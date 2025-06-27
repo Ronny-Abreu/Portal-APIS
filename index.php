@@ -124,6 +124,18 @@ include_once 'includes/functions.php';
                 </div>
             </div>
 
+             <!-- Images API Card -->
+            <div class="api-card bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="p-6">
+                    <div class="text-4xl mb-4 text-center">🖼️</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Generador de Imágenes</h3>
+                    <p class="text-gray-600 mb-4">Busca imágenes por palabra clave</p>
+                    <a href="pages/images.php" class="btn-primary w-full text-center block">
+                        <i class="fas fa-image mr-2"></i>Explorar
+                    </a>
+                </div>
+            </div>
+
         </div>
     </main>
 
